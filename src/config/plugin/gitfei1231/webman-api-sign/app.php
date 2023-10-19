@@ -15,11 +15,12 @@ return [
     'table' => 'app_sign', //表名
     
     /**
-     * 防重放请求是否开启 true只能请求一次，时间是上面 timeout内
-     * replay 主要借助与 timeout + noncestr随机值进行验证, 一定的时间内noncestr如果重复，那就判定重放请求
+     * 防重放请求是否开启 true只能请求一次，时间是replayTime(秒)内
+     * replay 主要借助与 replayTime(秒) + noncestr随机值进行验证, 一定的时间内noncestr如果重复，那就判定重放请求
      * noncestr 建议生成随机唯一UUID 或者你使用 13位时间戳+18位随机数。1678159075243(13位)+随机数(18位)
      */
     'replay' => false, 
+    'replayTime' => 60, 
 
     /**
      * 如果使用 DatabaseDriver 需要缓存查询后的数据
