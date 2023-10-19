@@ -3,7 +3,7 @@
     "description": "基于gitfei1231优化的webman-api-sign",
     "autoload": {
         "psr-4": {
-            "Getonging\\WebmanApiSign\\": "src/"
+            "Wengg\\WebmanApiSign\\": "src"
         }
     },
     "authors": [
@@ -12,5 +12,13 @@
             "email": "minzufeng@vip.qq.com"
         }
     ],
-    "require": {}
+    "require": {
+        "webman/think-cache": "^1.0",
+        "webman/think-orm": "^1.0",
+        "phpseclib/phpseclib": "~3.0",
+        "psr/container": "1.1.1"
+    },
+    "require-dev": {
+        "workerman/webman": "^1.0"
+    }
 }
