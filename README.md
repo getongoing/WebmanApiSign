@@ -3,13 +3,14 @@
 
 本插件基于 https://github.com/gitfei1231/webman-api-sign2 修改，
 
-主要修改：
-1.重放攻击单独计时
-2.修改默认中间件为API
-3.优化Redis储存方式
-4.优化API抛错
 
-不需要防止重放请求和RSA加密的直接使用原作者的插件即可。
+#### 主要修改：
+- 1.重放攻击单独计时
+- 2.修改默认中间件为API
+- 3.优化Redis储存方式
+- 4.优化API抛错
+
+**不需要以上修改内容的可以直接使用上述作者的插件。**
 
 
 # 安装
@@ -32,11 +33,12 @@ return [
     'table' => 'app_sign', //表名
 
     /**
-     * 防重放请求是否开启 true只能请求一次，时间是上面 timeout内
-     * replay 主要借助与 timeout + noncestr随机值进行验证, 一定的时间内noncestr如果重复，那就判定重放请求
+     * 防重放请求是否开启 true只能请求一次，时间是replayTime(秒)内
+     * replay 主要借助与 replayTime(秒) + noncestr随机值进行验证, 一定的时间内noncestr如果重复，那就判定重放请求
      * noncestr 建议生成随机唯一UUID 或者你使用 13位时间戳+18位随机数。1678159075243(13位)+随机数(18位)
      */
     'replay' => false,
+    'replayTime' => 60,
     
     /**
      * 如果使用 DatabaseDriver 需要缓存查询后的数据
