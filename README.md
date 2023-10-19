@@ -1,6 +1,17 @@
 # webman-api-sign
 适用于webman项目的api签名，本插件基于 https://github.com/wen-gg/webman-api-sign 修改，不需要防止重放请求和RSA加密的直接使用原作者的插件即可。
 
+本插件基于 https://github.com/gitfei1231/webman-api-sign2 修改，
+
+主要修改：
+1.重放攻击单独计时
+2.修改默认中间件为API
+3.优化Redis储存方式
+4.优化API抛错
+
+不需要防止重放请求和RSA加密的直接使用原作者的插件即可。
+
+
 # 安装
 composer require gitfei1231/webman-api-sign
 
