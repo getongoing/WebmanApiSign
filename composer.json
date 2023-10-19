@@ -1,0 +1,16 @@
+{
+    "name": "getonging/webman-api-sign",
+    "description": "基于gitfei1231优化的webman-api-sign",
+    "autoload": {
+        "psr-4": {
+            "Getonging\\WebmanApiSign\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "一男",
+            "email": "minzufeng@vip.qq.com"
+        }
+    ],
+    "require": {}
+}
