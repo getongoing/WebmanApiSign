@@ -13,7 +13,7 @@
 
 
 # 安装
-composer require gitfei1231/webman-api-sign
+composer require getonging/webman-api-sign
 
 # 配置
 ```php
