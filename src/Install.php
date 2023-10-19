@@ -9,7 +9,7 @@ class Install
      * @var array
      */
     protected static $pathRelation = array(
-        'config/plugin/gitfei1231/webman-api-sign' => 'config/plugin/gitfei1231/webman-api-sign',
+        'config/plugin/getonging/webman-api-sign' => 'config/plugin/getonging/webman-api-sign',
     );
 
     /**
